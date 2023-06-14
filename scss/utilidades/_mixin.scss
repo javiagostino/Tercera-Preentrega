@@ -1,0 +1,8 @@
+@mixin flex{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
