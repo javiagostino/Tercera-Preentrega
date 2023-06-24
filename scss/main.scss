@@ -31,9 +31,13 @@ header{
 }
 
 main{
+    .cinco {
+     @include flex
+    }
     h2{
      @include flex
     }
+
     h3{
       @extend %main
     } 
@@ -87,7 +91,7 @@ footer{
 }
 
 @media screen and (min-width: 600px) {
-    .contenedor div img, .contenedor-tres div img {
+    .cinco, .contenedor div img, .contenedor-tres div img {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 50%);
     }
@@ -98,7 +102,7 @@ footer{
   }
   
   @media screen and (min-width: 320px) {
-    .contenedor-tres div img,
+    .cinco, .contenedor-tres div img,
     .contenedor div img {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 25%);
@@ -106,7 +110,7 @@ footer{
   }
 
   @media screen and (min-width: 1024) {
-    .contenedor div img, .contenedor-tres div img {
+    .cinco, .contenedor div img, .contenedor-tres div img {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 50%);
     }

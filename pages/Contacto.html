@@ -34,23 +34,24 @@
     <main>
 
         <form>
-            <fieldset>
-                <legend>Completa tus datos</legend>
-                
-                <div>
-                    <label for="">Nombre y Apellido
-                    <input type="text">
-                    <div>
-                        <label for="">Email</label>
-                        <input type="email">
-                     <div> 
-                        <input type="submit">
-                        <input type="reset">
-                    </div>
-                    </label>
-                </div>
-            </fieldset>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+            </div>
+    
+            <input type="submit" value="Enviar">
         </form>
+        
     </main>
 
     <footer>
